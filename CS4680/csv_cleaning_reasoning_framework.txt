@@ -1,0 +1,190 @@
+Automated CSV Data Cleaning Reasoning Framework v1.0
+1. Purpose
+
+This document defines reasoning principles for an automated LLM-based CSV data cleaning agent.
+It does not enforce a fixed cleaning order. Instead, it provides decision criteria and tradeoff analysis guidelines.
+
+The agent must dynamically select cleaning steps based on dataset profiling metrics.
+
+1.1 Current Tool Scope
+
+The current implementation supports these executable actions:
+
+remove_duplicates
+
+impute_missing_values with strategies: mean, median, mode, constant
+
+drop_columns
+
+The agent also supports prompt-level constraints:
+
+protect specific columns (for example: "do not drop Total Spent")
+
+column-specific replacement rules (for example: "If Payment Method is empty replace with None")
+
+Advanced topics such as type coercion and outlier handling remain valid reasoning guidance in this framework, but they require additional tool implementations to be executed directly.
+
+2. Dataset Profiling Metrics
+
+Before applying any cleaning step, the agent must evaluate:
+
+Missing value percentage per column
+
+Duplicate row percentage
+
+Inferred data types
+
+Mixed-type columns
+
+Cardinality of categorical columns
+
+Distribution skewness of numeric columns
+
+Cleaning decisions must be based on measurable metrics rather than arbitrary rules.
+
+3. Cleaning Order Dependencies
+
+There is no universally fixed cleaning order. However, the following conditional dependencies often apply:
+
+Duplicate removal may be performed early if duplicates distort profiling statistics.
+
+Type coercion may precede missing value handling if invalid types create artificial null values.
+
+Outlier detection should typically occur after missing values are handled.
+
+Column dropping should only occur after evaluating analytical importance and missingness severity.
+
+Multi-pass cleaning is acceptable when a first pass changes dataset characteristics significantly (for example, deduplication first, then missing-value handling).
+
+The agent must justify any chosen order.
+
+4. Handling Missing Values
+4.1 Numeric Columns
+
+Possible strategies:
+
+Mean imputation when distribution is approximately symmetric.
+
+Median imputation when distribution is skewed.
+
+Mode imputation for discrete numeric values.
+
+Constant-value imputation when explicitly requested by prompt constraints.
+
+Column dropping if missing percentage is extremely high and analytical value is low.
+
+The agent must consider:
+
+Percentage of missing values
+
+Column importance
+
+Distribution shape
+
+Dataset size
+
+Imputation should not be performed on identifier columns.
+
+4.2 Categorical Columns
+
+Possible strategies:
+
+Mode imputation for low-cardinality categories.
+
+Introduce “Unknown” category when appropriate.
+
+Use constant-value replacement when explicitly requested by prompt constraints (for example replacing blanks with "None").
+
+Drop column if missingness exceeds acceptable threshold and column is not critical.
+
+High-cardinality columns require careful evaluation before imputation.
+
+5. Duplicate Handling
+
+Duplicate removal may be appropriate when:
+
+Rows are exact duplicates.
+
+Duplicates inflate statistical summaries.
+
+However, duplicates may be valid in transactional or log datasets.
+The agent must evaluate dataset context before removal.
+
+6. Data Type Coercion
+
+Mixed-type columns should be coerced when:
+
+Majority of values represent a consistent type.
+
+Invalid conversions can be safely converted to null and handled later.
+
+Type coercion must not cause excessive data loss.
+
+In the current implementation, coercion rules should be treated as reasoning guidance unless dedicated coercion tools are added.
+
+7. Outlier Handling
+
+Outliers may be detected using:
+
+Interquartile Range (IQR)
+
+Z-score methods
+
+Outliers should not be removed blindly.
+They may represent legitimate extreme observations.
+
+The agent must consider domain context before removing or capping outliers.
+
+In the current implementation, outlier logic should be treated as reasoning guidance unless dedicated outlier tools are added.
+
+8. Column Dropping Criteria
+
+Dropping a column is justified only if:
+
+Missingness is extremely high
+
+Column is analytically irrelevant
+
+High cardinality provides no analytical value
+
+Data corruption is severe
+
+Dropping columns reduces dimensionality but may remove useful information.
+
+9. Tradeoff Principles
+
+Every cleaning action involves tradeoffs:
+
+Dropping preserves statistical purity but reduces dataset size.
+
+Imputation preserves size but may introduce bias.
+
+Early cleaning may simplify later steps but risks premature decisions.
+
+The agent must justify each action using dataset metrics.
+
+10. Deterministic Agent Constraint
+
+Although reasoning is dynamic, decisions must:
+
+Be based on measurable metrics.
+
+Be reproducible.
+
+Produce structured JSON action logs.
+
+Reference explicit decision criteria.
+
+The agent must not hallucinate rules not present in this framework.
+
+10.1 Hybrid Agent Constraint
+
+This system is a controlled hybrid:
+
+The LLM proposes cleaning actions.
+
+Guardrails validate and normalize the plan.
+
+Tools execute deterministic data changes.
+
+Final reports must include objective before/after evidence.

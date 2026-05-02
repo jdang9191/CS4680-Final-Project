@@ -1,0 +1,101 @@
+name,age,salary,color,department,city
+Anna,24,52000,red,Sales,New York
+ben,31,61000,Blue,Engineering,San Francisco
+Cara,,58000,green,Marketing,Chicago
+David,29,,red,Sales,Austin
+eva,35,72000,Blue,Engineering,Seattle
+Frank,42,68000,,Finance,Boston
+Grace,27,54000,Yellow,HR,
+Hector,33,63000,green,Engineering,Denver
+Ivy,26,52000,red,Marketing,Chicago
+James,31,61000,blue,Engineering,San Francisco
+Kara,28,59000,purple,Sales,New York
+Liam,40,70000,blue,Finance,Miami
+Mia,25,51000,red,HR,Atlanta
+Noah,37,65000,green,Operations,Dallas
+Olivia,34,64000,blue,Operations,Seattle
+Pablo,29,60000,red,Sales,Austin
+Quinn,32,,orange,Support,Portland
+Rita,38,73000,green,Finance,Boston
+Sam,30,62000,blue,Engineering,San Jose
+Tina,27,55000,,Marketing,Chicago
+Uma,26,51500,red,Sales,New York
+Victor,41,69000,green,Engineering,Denver
+Wendy,,71000,Blue,HR,Chicago
+Xavier,45,76000,red,Support,Dallas
+Yara,39,74000,green,Marketing,
+Zane,44,78000,blue,Finance,Miami
+Ava,28,59000,blue,Sales, New York
+Brian,33,63000,green,Engineering,San Francisco
+Chloe,29,60000,red,Marketing,Chicago
+Dylan,31,61000,blue,Support,Austin
+Ella,35,,green,HR,Seattle
+Finn,27,55000,red,Finance,Boston
+Gia,30,62000,blue,Operations,Denver
+Henry,36,64000,green,Sales,Atlanta
+Isla,32,60000,,Engineering,Portland
+Jack,28,58000,red,Marketing,Chicago
+Kelsey,34,66000,blue,Finance,New York
+Leo,40,70000,green,Support,Dallas
+Mila,25,51000,red,HR,Seattle
+Nora,38,73000,blue,Operations,Miami
+Owen,29,60000,green,Sales,Austin
+Paula,41,69000,red,Engineering,San Jose
+Rory,37,65000,Blue,Marketing,Chicago
+Sophie,26,52000,green,Finance,Boston
+Tyler,43,77000,red,Support,Denver
+Ursula,30,62000,blue,HR,Atlanta
+Vince,39,74000,green,Operations,
+Will,27,55000,red,Sales,Portland
+Xena,45,76000,blue,Engineering,San Francisco
+Yvonne,33,63000,green,Marketing,Chicago
+Zack,44,78000,red,Finance,Miami
+Anna,24,52000,red,Sales,New York
+ben,31,61000,Blue,Engineering,San Francisco
+Cara,,58000,green,Marketing,Chicago
+David,29,,red,Sales,Austin
+eva,35,72000,Blue,Engineering,Seattle
+Frank,42,68000,,Finance,Boston
+Grace,27,54000,Yellow,HR,
+Hector,33,63000,green,Engineering,Denver
+Ivy,26,52000,red,Marketing,Chicago
+James,31,61000,blue,Engineering,San Francisco
+Kara,28,59000,purple,Sales,New York
+Liam,40,70000,blue,Finance,Miami
+Mia,25,51000,red,HR,Atlanta
+Noah,37,65000,green,Operations,Dallas
+Olivia,34,64000,blue,Operations,Seattle
+Pablo,29,60000,red,Sales,Austin
+Quinn,32,,orange,Support,Portland
+Rita,38,73000,green,Finance,Boston
+Sam,30,62000,blue,Engineering,San Jose
+Tina,27,55000,,Marketing,Chicago
+Uma,26,51500,red,Sales,New York
+Victor,41,69000,green,Engineering,Denver
+Wendy,,71000,Blue,HR,Chicago
+Xavier,45,76000,red,Support,Dallas
+Yara,39,74000,green,Marketing,
+Zane,44,78000,blue,Finance,Miami
+Ava,28,59000,blue,Sales, New York
+Brian,33,63000,green,Engineering,San Francisco
+Chloe,29,60000,red,Marketing,Chicago
+Dylan,31,61000,blue,Support,Austin
+Ella,35,,green,HR,Seattle
+Finn,27,55000,red,Finance,Boston
+Gia,30,62000,blue,Operations,Denver
+Henry,36,64000,green,Sales,Atlanta
+Isla,32,60000,,Engineering,Portland
+Jack,28,58000,red,Marketing,Chicago
+Kelsey,34,66000,blue,Finance,New York
+Leo,40,70000,green,Support,Dallas
+Mila,25,51000,red,HR,Seattle
+Nora,38,73000,blue,Operations,Miami
+Owen,29,60000,green,Sales,Austin
+Paula,41,69000,red,Engineering,San Jose
+Rory,37,65000,Blue,Marketing,Chicago
+Sophie,26,52000,green,Finance,Boston
+Tyler,43,77000,red,Support,Denver
+Ursula,30,62000,blue,HR,Atlanta
+Vince,39,74000,green,Operations,
+Will,27,55000,red,Sales,Portland
+Xena,45,76000,blue,Engineering,San Francisco

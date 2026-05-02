@@ -1,0 +1,339 @@
+{
+  "before_profile": {
+    "rows": 100,
+    "columns": [
+      "name",
+      "age",
+      "salary",
+      "color",
+      "department",
+      "city"
+    ],
+    "dtypes": {
+      "name": "str",
+      "age": "float64",
+      "salary": "float64",
+      "color": "str",
+      "department": "str",
+      "city": "str"
+    },
+    "numeric_columns": [
+      "age",
+      "salary"
+    ],
+    "categorical_columns": [
+      "name",
+      "color",
+      "department",
+      "city"
+    ],
+    "column_support": {
+      "name": {
+        "dtype": "str",
+        "supported": true,
+        "allowed_operations": [
+          "mode",
+          "constant"
+        ]
+      },
+      "age": {
+        "dtype": "float64",
+        "supported": true,
+        "allowed_operations": [
+          "mean",
+          "median",
+          "mode",
+          "constant"
+        ]
+      },
+      "salary": {
+        "dtype": "float64",
+        "supported": true,
+        "allowed_operations": [
+          "mean",
+          "median",
+          "mode",
+          "constant"
+        ]
+      },
+      "color": {
+        "dtype": "str",
+        "supported": true,
+        "allowed_operations": [
+          "mode",
+          "constant"
+        ]
+      },
+      "department": {
+        "dtype": "str",
+        "supported": true,
+        "allowed_operations": [
+          "mode",
+          "constant"
+        ]
+      },
+      "city": {
+        "dtype": "str",
+        "supported": true,
+        "allowed_operations": [
+          "mode",
+          "constant"
+        ]
+      }
+    },
+    "missing_percentage": {
+      "name": 0.0,
+      "age": 0.05,
+      "salary": 0.1,
+      "color": 0.1,
+      "department": 0.0,
+      "city": 0.05
+    },
+    "missing_counts": {
+      "name": 0,
+      "age": 5,
+      "salary": 10,
+      "color": 10,
+      "department": 0,
+      "city": 5
+    },
+    "duplicates": 80,
+    "duplicate_percentage": 0.8,
+    "numeric_summary": {
+      "age": {
+        "mean": 31.473684210526315,
+        "median": 31.0,
+        "std": 4.988074420715153,
+        "min": 24.0,
+        "max": 42.0,
+        "skew": 0.5124412634311136
+      },
+      "salary": {
+        "mean": 61111.11111111111,
+        "median": 61000.0,
+        "std": 6607.141665474891,
+        "min": 51000.0,
+        "max": 73000.0,
+        "skew": 0.17944820190219746
+      }
+    },
+    "cardinality": {
+      "name": 20,
+      "color": 6,
+      "department": 7,
+      "city": 12
+    }
+  },
+  "validation": {
+    "accepted": true,
+    "max_allowed_rows": 50000,
+    "provided_rows": 100,
+    "supported_column_types": [
+      "numeric",
+      "text",
+      "categorical",
+      "boolean"
+    ],
+    "unsupported_columns": []
+  },
+  "cleaned_file_path": "/Users/Jonny/CS4680/mcp_csv_server/test_data/outputs/sample_dataset_100_cleaned.csv",
+  "report_file_path": "/Users/Jonny/CS4680/mcp_csv_server/test_data/outputs/sample_dataset_100_cleaned_report_20260422.txt",
+  "plan": {
+    "summary": "Data cleaned according to user prompt constraints.",
+    "actions": [
+      {
+        "type": "drop_rows_with_nulls",
+        "reason": "User prompted for row removal if any null values exist in the dataset.",
+        "column": null,
+        "columns": null,
+        "strategy": null,
+        "fill_value": null
+      }
+    ]
+  },
+  "execution_results": [
+    {
+      "action": {
+        "type": "drop_rows_with_nulls",
+        "reason": "User prompt constraint: strict any null row drop.",
+        "column": null,
+        "columns": null,
+        "strategy": null,
+        "fill_value": null
+      },
+      "tool_result": {
+        "status": "success",
+        "mode": "any_column",
+        "columns": [],
+        "rows_before": 100,
+        "rows_after": 70,
+        "rows_removed": 30,
+        "output_file_path": "/Users/Jonny/CS4680/mcp_csv_server/test_data/outputs/sample_dataset_100_cleaned.csv"
+      }
+    },
+    {
+      "action": {
+        "type": "drop_rows_with_nulls",
+        "reason": "User prompt constraint: strict any-null-row-drop",
+        "column": null,
+        "columns": null,
+        "strategy": null,
+        "fill_value": null
+      },
+      "tool_result": {
+        "status": "success",
+        "mode": "any_column",
+        "columns": [],
+        "rows_before": 70,
+        "rows_after": 70,
+        "rows_removed": 0,
+        "output_file_path": "/Users/Jonny/CS4680/mcp_csv_server/test_data/outputs/sample_dataset_100_cleaned.csv"
+      }
+    },
+    {
+      "action": {
+        "type": "drop_rows_with_nulls",
+        "reason": "User prompted for row removal if any null values exist in the dataset.",
+        "column": null,
+        "columns": null,
+        "strategy": null,
+        "fill_value": null
+      },
+      "tool_result": {
+        "status": "success",
+        "mode": "any_column",
+        "columns": [],
+        "rows_before": 70,
+        "rows_after": 70,
+        "rows_removed": 0,
+        "output_file_path": "/Users/Jonny/CS4680/mcp_csv_server/test_data/outputs/sample_dataset_100_cleaned.csv"
+      }
+    }
+  ],
+  "after_profile": {
+    "rows": 70,
+    "columns": [
+      "name",
+      "age",
+      "salary",
+      "color",
+      "department",
+      "city"
+    ],
+    "dtypes": {
+      "name": "str",
+      "age": "float64",
+      "salary": "float64",
+      "color": "str",
+      "department": "str",
+      "city": "str"
+    },
+    "numeric_columns": [
+      "age",
+      "salary"
+    ],
+    "categorical_columns": [
+      "name",
+      "color",
+      "department",
+      "city"
+    ],
+    "column_support": {
+      "name": {
+        "dtype": "str",
+        "supported": true,
+        "allowed_operations": [
+          "mode",
+          "constant"
+        ]
+      },
+      "age": {
+        "dtype": "float64",
+        "supported": true,
+        "allowed_operations": [
+          "mean",
+          "median",
+          "mode",
+          "constant"
+        ]
+      },
+      "salary": {
+        "dtype": "float64",
+        "supported": true,
+        "allowed_operations": [
+          "mean",
+          "median",
+          "mode",
+          "constant"
+        ]
+      },
+      "color": {
+        "dtype": "str",
+        "supported": true,
+        "allowed_operations": [
+          "mode",
+          "constant"
+        ]
+      },
+      "department": {
+        "dtype": "str",
+        "supported": true,
+        "allowed_operations": [
+          "mode",
+          "constant"
+        ]
+      },
+      "city": {
+        "dtype": "str",
+        "supported": true,
+        "allowed_operations": [
+          "mode",
+          "constant"
+        ]
+      }
+    },
+    "missing_percentage": {
+      "name": 0.0,
+      "age": 0.0,
+      "salary": 0.0,
+      "color": 0.0,
+      "department": 0.0,
+      "city": 0.0
+    },
+    "missing_counts": {
+      "name": 0,
+      "age": 0,
+      "salary": 0,
+      "color": 0,
+      "department": 0,
+      "city": 0
+    },
+    "duplicates": 56,
+    "duplicate_percentage": 0.8,
+    "numeric_summary": {
+      "age": {
+        "mean": 31.5,
+        "median": 31.0,
+        "std": 4.747179613803788,
+        "min": 24.0,
+        "max": 40.0,
+        "skew": 0.1310179662826123
+      },
+      "salary": {
+        "mean": 61785.71428571428,
+        "median": 61500.0,
+        "std": 6731.361265731911,
+        "min": 51000.0,
+        "max": 73000.0,
+        "skew": -0.01940175779639984
+      }
+    },
+    "cardinality": {
+      "name": 14,
+      "color": 4,
+      "department": 6,
+      "city": 11
+    }
+  },
+  "report": "CSV Cleaning Report\n===================\nPrompt: Clean this dataset. Delete rows with any null in any column.\n\nDataset Overview\n- Rows: 100 -> 70\n- Columns before: 6\n- Columns after: 6\n- Missing cells: 30 -> 0\n- Duplicate rows: 80 -> 56\n\nCleaning Actions Executed\n- drop_rows_with_nulls (any_column, columns=[]): rows 100 -> 70, removed=30\n- drop_rows_with_nulls (any_column, columns=[]): rows 70 -> 70, removed=0\n- drop_rows_with_nulls (any_column, columns=[]): rows 70 -> 70, removed=0\n\nPlan Summary\n- Data cleaned according to user prompt constraints.\n\n---\nExecution Receipt\n- Cleaned rows: 100 -> 70\n- Missing cells: 30 -> 0\n- Duplicates: 80 -> 56\n- Per-column actions:\n- drop_rows_with_nulls (any_column, columns=[]): rows 100 -> 70, removed=30\n- drop_rows_with_nulls (any_column, columns=[]): rows 70 -> 70, removed=0\n- drop_rows_with_nulls (any_column, columns=[]): rows 70 -> 70, removed=0\n- Note: literal values like 'UNKNOWN' are preserved unless the prompt explicitly asks to replace them.\n\nQuality Audit\n- Rows before: 100\n- Rows after: 70\n- Row retention: 70.00%\n- Missing values before: 30\n- Missing values after: 0\n- Missing reduction: 100.00%\n- Duplicates before: 80\n- Duplicates after: 56\n- Duplicate reduction: 30.00%\n\nPolicy Compliance\n- Protected columns dropped: none\n- Prompt replacement checks:\n- none\n\nAction Summary\n- drop_rows_with_nulls: 3\n\nDistribution Shift Check\n- age: OK (mean_shift=0.08%, median_shift=0.00%)\n- salary: OK (mean_shift=1.10%, median_shift=0.82%)\n\nManual Spot-Check Reminder\n- Verify 10-20 random rows in the cleaned CSV for semantic correctness."
+}

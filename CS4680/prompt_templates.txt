@@ -1,0 +1,26 @@
+CSV Cleaning Prompt Templates
+
+1. Short demo set
+Clean this dataset. Remove duplicates.
+
+Clean this dataset. Remove duplicates. Remove the 'age' column.
+
+Clean this dataset. Remove rows where 'age' column is null.
+
+Clean this dataset. Impute null values in 'city' column to Sacramento.
+
+2. Tricky demo set
+Clean this dataset. Remove duplicates. Remove rows where 'age' column is null. Then impute null values in 'city' column to Sacramento.
+
+Clean this dataset. Remove duplicates. Remove the 'age' column. Then impute null values in 'city' column to Los Angeles.
+
+Clean this dataset. Drop columns 'age' and 'salary'. Remove rows with null values in 'city' column.
+
+Clean this dataset. Remove rows where 'age' column is null. Then remove the 'age' column.
+
+3. Guardrail / Bad prompts (examples used to validate safety)
+Delete all columns that look irrelevant and remove any rows with missing values.
+Impute nulls in xyz column to mean.
+Remove rows.
+Drop the 'age' column. Then impute nulls in age to 30.
+Clean this dataset by removing bad data and dropping unhelpful columns.

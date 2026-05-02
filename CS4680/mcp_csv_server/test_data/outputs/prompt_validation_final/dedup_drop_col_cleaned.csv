@@ -1,0 +1,52 @@
+name,salary,color,department,city
+Anna,52000,red,Sales,New York
+ben,61000,Blue,Engineering,San Francisco
+Cara,58000,green,Marketing,Chicago
+David,63594,red,Sales,Austin
+eva,72000,Blue,Engineering,Seattle
+Frank,68000,red,Finance,Boston
+Grace,54000,Yellow,HR,Chicago
+Hector,63000,green,Engineering,Denver
+Ivy,52000,red,Marketing,Chicago
+James,61000,blue,Engineering,San Francisco
+Kara,59000,purple,Sales,New York
+Liam,70000,blue,Finance,Miami
+Mia,51000,red,HR,Atlanta
+Noah,65000,green,Operations,Dallas
+Olivia,64000,blue,Operations,Seattle
+Pablo,60000,red,Sales,Austin
+Quinn,63594,orange,Support,Portland
+Rita,73000,green,Finance,Boston
+Sam,62000,blue,Engineering,San Jose
+Tina,55000,red,Marketing,Chicago
+Uma,51500,red,Sales,New York
+Victor,69000,green,Engineering,Denver
+Wendy,71000,Blue,HR,Chicago
+Xavier,76000,red,Support,Dallas
+Yara,74000,green,Marketing,Chicago
+Zane,78000,blue,Finance,Miami
+Ava,59000,blue,Sales, New York
+Brian,63000,green,Engineering,San Francisco
+Chloe,60000,red,Marketing,Chicago
+Dylan,61000,blue,Support,Austin
+Ella,63594,green,HR,Seattle
+Finn,55000,red,Finance,Boston
+Gia,62000,blue,Operations,Denver
+Henry,64000,green,Sales,Atlanta
+Isla,60000,red,Engineering,Portland
+Jack,58000,red,Marketing,Chicago
+Kelsey,66000,blue,Finance,New York
+Leo,70000,green,Support,Dallas
+Mila,51000,red,HR,Seattle
+Nora,73000,blue,Operations,Miami
+Owen,60000,green,Sales,Austin
+Paula,69000,red,Engineering,San Jose
+Rory,65000,Blue,Marketing,Chicago
+Sophie,52000,green,Finance,Boston
+Tyler,77000,red,Support,Denver
+Ursula,62000,blue,HR,Atlanta
+Vince,74000,green,Operations,Chicago
+Will,55000,red,Sales,Portland
+Xena,76000,blue,Engineering,San Francisco
+Yvonne,63000,green,Marketing,Chicago
+Zack,78000,red,Finance,Miami

@@ -1,0 +1,68 @@
+CSV Cleaning Report
+===================
+Date: 2026-04-29 10:36:17
+Prompt: Clean this dataset. Impute null values in 'city' column to Sacramento.
+
+DATASET OVERVIEW
+Rows:            100 -> 51
+Columns (before): 6
+Columns (after):  6
+Missing cells:    22 -> 3
+Duplicate rows:   49 -> 0
+
+ACTIONS EXECUTED
+1. deduplicate: rows 100 -> 51, removed=49
+2. impute city: strategy=replace, fill=Sacramento, missing ? -> ?
+3. impute age: strategy=mean, fill=33, missing 2 -> 0
+4. impute salary: strategy=mean, fill=63594, missing 3 -> 0
+5. impute color: strategy=mode, fill=red, missing 3 -> 0
+6. impute city: strategy=replace, fill=Sacramento, missing ? -> ?
+7. impute city: strategy=replace, fill=Sacramento, missing ? -> ?
+
+PLAN SUMMARY
+- Automated CSV Data Cleaning Report
+
+---
+
+EXECUTION RECEIPT
+Cleaned rows:     100 -> 51
+Missing cells:    22 -> 3
+Duplicates:       49 -> 0
+Per-column actions:
+- deduplicate: rows 100 -> 51, removed=49
+- impute city: strategy=replace, fill=Sacramento, missing ? -> ?
+- impute age: strategy=mean, fill=33, missing 2 -> 0
+- impute salary: strategy=mean, fill=63594, missing 3 -> 0
+- impute color: strategy=mode, fill=red, missing 3 -> 0
+- impute city: strategy=replace, fill=Sacramento, missing ? -> ?
+- impute city: strategy=replace, fill=Sacramento, missing ? -> ?
+
+
+QUALITY AUDIT
+Rows before:      100
+Rows after:       51
+Row retention:    51.00%
+Missing before:   22
+Missing after:    3
+Missing reduced:  86.36%
+Duplicates before: 49
+Duplicates after:  0
+Duplicates reduced: 100.00%
+
+
+POLICY COMPLIANCE
+Protected columns dropped: none
+Prompt replacement checks:
+- none
+
+
+ACTION SUMMARY
+- impute_missing: 6
+- remove_duplicates: 1
+
+DISTRIBUTION SHIFT CHECK
+- age: OK (mean_shift=0.29%, median_shift=3.12%)
+- salary: OK (mean_shift=0.23%, median_shift=1.61%)
+
+MANUAL SPOT-CHECK
+Verify 10-20 random rows in the cleaned CSV for semantic correctness.

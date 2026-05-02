@@ -1,0 +1,52 @@
+name,salary,color,department,city
+Anna,52000.0,red,Sales,New York
+ben,61000.0,Blue,Engineering,San Francisco
+Cara,58000.0,green,Marketing,Chicago
+David,,red,Sales,Austin
+eva,72000.0,Blue,Engineering,Seattle
+Frank,68000.0,,Finance,Boston
+Grace,54000.0,Yellow,HR,
+Hector,63000.0,green,Engineering,Denver
+Ivy,52000.0,red,Marketing,Chicago
+James,61000.0,blue,Engineering,San Francisco
+Kara,59000.0,purple,Sales,New York
+Liam,70000.0,blue,Finance,Miami
+Mia,51000.0,red,HR,Atlanta
+Noah,65000.0,green,Operations,Dallas
+Olivia,64000.0,blue,Operations,Seattle
+Pablo,60000.0,red,Sales,Austin
+Quinn,,orange,Support,Portland
+Rita,73000.0,green,Finance,Boston
+Sam,62000.0,blue,Engineering,San Jose
+Tina,55000.0,,Marketing,Chicago
+Uma,51500.0,red,Sales,New York
+Victor,69000.0,green,Engineering,Denver
+Wendy,71000.0,Blue,HR,Chicago
+Xavier,76000.0,red,Support,Dallas
+Yara,74000.0,green,Marketing,
+Zane,78000.0,blue,Finance,Miami
+Ava,59000.0,blue,Sales, New York
+Brian,63000.0,green,Engineering,San Francisco
+Chloe,60000.0,red,Marketing,Chicago
+Dylan,61000.0,blue,Support,Austin
+Ella,,green,HR,Seattle
+Finn,55000.0,red,Finance,Boston
+Gia,62000.0,blue,Operations,Denver
+Henry,64000.0,green,Sales,Atlanta
+Isla,60000.0,,Engineering,Portland
+Jack,58000.0,red,Marketing,Chicago
+Kelsey,66000.0,blue,Finance,New York
+Leo,70000.0,green,Support,Dallas
+Mila,51000.0,red,HR,Seattle
+Nora,73000.0,blue,Operations,Miami
+Owen,60000.0,green,Sales,Austin
+Paula,69000.0,red,Engineering,San Jose
+Rory,65000.0,Blue,Marketing,Chicago
+Sophie,52000.0,green,Finance,Boston
+Tyler,77000.0,red,Support,Denver
+Ursula,62000.0,blue,HR,Atlanta
+Vince,74000.0,green,Operations,
+Will,55000.0,red,Sales,Portland
+Xena,76000.0,blue,Engineering,San Francisco
+Yvonne,63000.0,green,Marketing,Chicago
+Zack,78000.0,red,Finance,Miami
